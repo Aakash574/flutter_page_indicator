@@ -53,7 +53,7 @@ class PageContainerState extends State<PageIndicatorContainer> {
 
     double height = widget.shape.height;
 
-    final initPage = pageView.controller.initialPage;
+    final initPage = pageView.controller?.initialPage ?? 0;
 
     final currentPage = this.currentPage ?? initPage.toDouble();
 
